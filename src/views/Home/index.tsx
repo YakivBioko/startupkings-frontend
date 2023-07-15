@@ -1,9 +1,1 @@
-import Header from "./Header";
-
-export default function Home() {
-  return (
-    <>
-      <Header />
-    </>
-  );
-}
+export { default as Header } from "./Header";
