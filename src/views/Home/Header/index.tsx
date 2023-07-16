@@ -4,7 +4,16 @@ import { RightArrowIcon } from "@/components";
 
 export default function Header() {
   return (
-    <div className="flex justify-between gap-[160px]">
+    <div className="">
+      <div className="float-right pr-[40px]">
+        <Image
+          src="/assets/images/home/avatars.png"
+          alt="avatars"
+          width={380}
+          height={330}
+        />
+      </div>
+
       <div className="max-w-[670px]">
         <div className="flex items-center gap-[14px] pl-[15px] mb-[17px]">
           <Circle className="text-[#D67F04]" />
@@ -22,7 +31,7 @@ export default function Header() {
           World Class Technical And Communication Skills, Without Worrying About
           Crazy Fees Or The Legal Hassle.
         </p>
-        <button className="rounded-[40px_40px_0_40px] text-black bg-[#14E410] text-[15px] font-bold leading-[1.587] px-[32px] py-[22px] flex items-center gap-2.5">
+        <button className="rounded-[40px_40px_0_40px] text-black bg-[#14E410] text-[15px] font-bold leading-[1.587] px-[32px] py-[22px] gap-2.5">
           Hire Talent{" "}
           <span className="w-[29px] h-[29px] rounded-full bg-white">
             <RightArrowIcon />
@@ -30,13 +39,10 @@ export default function Header() {
         </button>
       </div>
 
-      <div>
-        <Image
-          src="/assets/images/home/avatars.png"
-          alt="avatars"
-          width={380}
-          height={330}
-        />
+      <div className="flex justify-center w-full mt-[92px]">
+        <div className="relative rounded-full border-4 border-[#DCD3FB] w-[36px] h-[55px]">
+          <p className="absolute left-[50%] top-[8px] -translate-x-[50%] rounded-full bg-[#DCD3FB] w-[6px] h-[12px] "></p>
+        </div>
       </div>
     </div>
   );
