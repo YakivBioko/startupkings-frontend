@@ -14,7 +14,7 @@ export default function Header() {
         />
       </div>
 
-      <div className="max-w-[670px]">
+      <div className="max-w-[670px] mt-[58px]">
         <div className="flex items-center gap-[14px] pl-[15px] mb-[17px]">
           <Circle className="text-[#D67F04]" />
           <Circle className="text-[#14E410]" />
@@ -26,7 +26,7 @@ export default function Header() {
           <br />
           For Your <span className="text-[#D67F04]">Startup</span>
         </span>
-        <p className="text-white text-[18px] leading-[158.7%] -tracking-[0.54px] mb-[25px]">
+        <p className="text-white text-[18px] leading-[158.7%] -tracking-[0.54px] mt-[18px] mb-[25px]">
           Hire Pre-Vetted Remote Developers, Designers & Product Managers With
           World Class Technical And Communication Skills, Without Worrying About
           Crazy Fees Or The Legal Hassle.
