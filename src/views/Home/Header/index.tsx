@@ -11,7 +11,7 @@ export default function Header({
 }: HTMLAttributes<HTMLDivElement>) {
   return (
     <div className={["", className].join(" ")} {...props}>
-      <div className="float-right pr-[40px]">
+      <div className="relative float-right pr-[40px] w-[380px] h-[330px]">
         <Image
           src="/assets/images/home/avatars.png"
           alt="avatars"

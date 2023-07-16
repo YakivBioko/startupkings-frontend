@@ -8,12 +8,12 @@ export default function Companies({
   return (
     <div
       className={[
-        "flex items-center justify-between gap-[58px]",
+        "flex items-center justify-center flex-wrap gap-[30px_58px]",
         className,
       ].join(" ")}
       {...props}
     >
-      <div className="text-[18px] text-[#DCD3FB] font-bold -tracking-[0.54px] -mr-[30px]">
+      <div className="text-[18px] text-[#DCD3FB] font-bold -tracking-[0.54px] -mr-[30px] text-center md:text-left">
         Trusted by leading enterprises
         <br />
         and startups
@@ -29,6 +29,7 @@ export default function Companies({
         alt="sardine"
         width={221}
         height={123}
+        className="-my-[25px]"
       />
       <Image
         src="/assets/images/home/intuit.png"
