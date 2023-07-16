@@ -1,10 +1,16 @@
+import { HTMLAttributes } from "react";
 import Image from "next/image";
-import Circle from "./Circle";
+
 import { RightArrowIcon } from "@/components";
 
-export default function Header() {
+import Circle from "./Circle";
+
+export default function Header({
+  className,
+  ...props
+}: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div className="">
+    <div className={["", className].join(" ")} {...props}>
       <div className="float-right pr-[40px]">
         <Image
           src="/assets/images/home/avatars.png"
@@ -20,7 +26,7 @@ export default function Header() {
           <Circle className="text-[#14E410]" />
           <Circle className="text-[#9C7EFF]" />
         </div>
-        <span className="text-white text-[58px] font-bold -tracking-[1.74px] mb-[19px]">
+        <span className="text-white text-[58px] font-bold leading-[1.277] -tracking-[1.74px] mb-[19px]">
           <span className="text-[#C27E01]">Get</span> The Perfect{" "}
           <span className="text-[#14E410]">Talent</span>
           <br />
