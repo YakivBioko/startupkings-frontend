@@ -22,10 +22,12 @@ export default function Navbar({
         height={120}
       />
       <div className="flex items-center gap-[50px] text-[14px] font-bold leading-[1.437] -tracking-[0.56px] text-white">
-        <Link href="/#home">Home</Link>
-        <Link href="/#testimonials">Testimonials</Link>
-        <Link href="/#about">About</Link>
-        <Link href="/#contact">Contact</Link>
+        <Link href="#home">Home</Link>
+        <Link href="#testinominals" scroll={false}>
+          Testimonials
+        </Link>
+        <Link href="#meet-team">About</Link>
+        <Link href="#contact">Contact</Link>
       </div>
     </div>
   );

@@ -14,10 +14,10 @@ export default function Companies({
       ].join(" ")}
       {...props}
     >
-      <div className="-mr-[30px] text-center text-[18px] font-bold -tracking-[0.54px] text-[#DCD3FB] md:text-left">
-        Trusted by leading enterprises
+      <div className="-mr-[30px] text-center text-[18px] -tracking-[0.54px] text-[#DCD3FB] md:text-left">
+        Trusted by <b>leading enterprises</b>
         <br />
-        and startups
+        and <b>startups</b>
       </div>
       <Image
         src="/assets/images/home/shippo.png"

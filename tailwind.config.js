@@ -12,7 +12,7 @@ module.exports = {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-        "card-gradient": "linear-gradient(138deg, #05042F 0%, #050E3E 100%))",
+        "card-gradient": "linear-gradient(138deg, #05042F 0%, #050E3E 100%)",
       },
       fontFamily: {
         poppins: ["Poppins"],

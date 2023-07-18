@@ -28,7 +28,7 @@ export default function Header({
           <Circle className="text-[#9C7EFF]" />
         </div>
         <span className="mb-[19px] text-[58px] font-bold leading-[1.277] -tracking-[1.74px] text-white">
-          <span className="text-[#C27E01]">Get</span> The Perfect{" "}
+          <span className="text-[#C27E01]">Get</span> The Perfect&nbsp;
           <span className="text-[#14E410]">Talent</span>
           <br />
           For Your <span className="text-[#D67F04]">Startup</span>
@@ -38,12 +38,14 @@ export default function Header({
           World Class Technical And Communication Skills, Without Worrying About
           Crazy Fees Or The Legal Hassle.
         </p>
-        <button className="gap-2.5 rounded-[40px_40px_0_40px] bg-[#14E410] px-[32px] py-[22px] text-[15px] font-bold leading-[1.587] text-black">
-          Hire Talent{" "}
-          <span className="h-[29px] w-[29px] rounded-full bg-white">
-            <RightArrowIcon />
-          </span>
-        </button>
+        <a href="#contact">
+          <button className="gap-2.5 rounded-[40px_40px_0_40px] bg-[#14E410] px-[32px] py-[22px] text-[15px] font-bold leading-[1.587] text-black">
+            Hire Talent&nbsp;
+            <span className="h-[29px] w-[29px] rounded-full bg-white">
+              <RightArrowIcon />
+            </span>
+          </button>
+        </a>
       </div>
 
       <div className="mt-[92px] flex w-full justify-center">

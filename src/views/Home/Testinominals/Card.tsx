@@ -16,22 +16,19 @@ export default function Card({
   description,
 }: CardProps) {
   return (
-    <div className="bg-card-gradient min-w-[36rem] max-w-xl rounded-xl border-2 border-[#051245] shadow-xl">
-      <div className="flex flex-row gap-2">
-        <Image
-          className="rounded-full"
-          src={photo}
-          alt={name}
-          width={120}
-          height={120}
-        />
-        <div className="flex flex-col">
-          <div>{name}</div>
-          <div>{position}</div>
-          <div>socasd</div>
-        </div>
+    <div className="flex min-w-[36rem] max-w-xl flex-row items-center gap-2 rounded-xl border-2 border-[#051245] bg-card-gradient p-4 shadow-xl">
+      <div className="flex flex-col gap-1">
+        <div>{name}</div>
+        <div className="mb-1 text-[#14E410]">{position}</div>
+        <p>{description}</p>
       </div>
-      <p>{description}</p>
+      <Image
+        className="m-2 rounded-full"
+        src={photo}
+        alt={name}
+        width={120}
+        height={120}
+      />
     </div>
   );
 }

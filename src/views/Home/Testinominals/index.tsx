@@ -5,31 +5,43 @@ import Card, { CardProps } from "./Card";
 const contents: CardProps[] = [
   {
     name: "Joe Duque",
-    position: "CEO",
-    photo: "",
-    description: "",
+    position: "GENERAL DIRECTOR",
+    photo: "/assets/images/home/team/peter.png",
+    description:
+      "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be mentored by a seasoned VP Engineering!",
   },
   {
     name: "Joe Duque",
-    position: "CEO",
-    photo: "",
-    description: "",
+    position: "GENERAL DIRECTOR",
+    photo: "/assets/images/home/team/peter.png",
+    description:
+      "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be mentored by a seasoned VP Engineering!",
   },
   {
     name: "Joe Duque",
-    position: "CEO",
-    photo: "",
-    description: "",
+    position: "GENERAL DIRECTOR",
+    photo: "/assets/images/home/team/peter.png",
+    description:
+      "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be mentored by a seasoned VP Engineering!",
+  },
+  {
+    name: "Joe Duque",
+    position: "GENERAL DIRECTOR",
+    photo: "/assets/images/home/team/peter.png",
+    description:
+      "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be mentored by a seasoned VP Engineering!",
   },
 ];
 
 export default function Testinominals() {
   return (
-    <section>
+    <section id="testinominals" className="px-10 py-20">
       <h2>Testinominals</h2>
-      <p>Work with contractors that are excited about working with you</p>
+      <p className="text-center">
+        Work with contractors that are excited about working with you
+      </p>
 
-      <div className="flex flex-row flex-wrap items-center justify-center gap-4">
+      <div className="mt-16 flex flex-row flex-wrap items-center justify-center gap-12">
         {contents.map((feedback, i) => (
           <Card key={`memeber_${i}`} {...feedback} />
         ))}

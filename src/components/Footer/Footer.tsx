@@ -36,7 +36,7 @@ export default function Footer() {
         </div>
         <div>
           <div className="">We&apos;re Always Happy To Help</div>
-          <a href="http://">support@startupkings.com</a>
+          <a href="http://">hello@startupkings.co</a>
         </div>
       </div>
       <div className="pt-2">Copyright © 2023 StartupKings</div>

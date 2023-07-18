@@ -1,12 +1,14 @@
 import {
   Achievement,
   Companies,
+  Contact,
   Header,
   HowItWorks,
   ReadyToStart,
   Services,
   SmarterWay,
   Team,
+  Testinominals,
 } from "@/views/Home";
 
 export default function Page() {
@@ -21,6 +23,8 @@ export default function Page() {
       <Services />
       <Team />
       <Achievement />
+      <Testinominals />
+      <Contact />
     </>
   );
 }

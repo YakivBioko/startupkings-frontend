@@ -22,12 +22,14 @@ export default function ReadyToStart({
           with Your Team<span className="text-[#D67F04]">?</span>
         </b>
       </h2>
-      <button className="gap-1 rounded-full bg-[#14E410] px-[15px] py-[8px] text-[15px] font-semibold text-[#152B70]">
-        Build My Team
-        <span className="h-[29px] w-[29px] rounded-full bg-white">
-          <RightArrowIcon />
-        </span>
-      </button>
+      <a href="#contact">
+        <button className="gap-1 rounded-full bg-[#14E410] px-[15px] py-[8px] text-[15px] font-semibold text-[#152B70]">
+          Build My Team
+          <span className="h-[29px] w-[29px] rounded-full bg-white">
+            <RightArrowIcon />
+          </span>
+        </button>
+      </a>
     </section>
   );
 }

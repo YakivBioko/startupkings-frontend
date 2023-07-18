@@ -20,8 +20,8 @@ export default function Card({
   socials,
 }: CardProps) {
   return (
-    <div className="bg-card-gradient min-w-[36rem] max-w-xl rounded-xl border-2 border-[#051245] shadow-xl">
-      <div className="flex flex-row gap-2">
+    <div className="min-w-[36rem] max-w-xl rounded-xl border-2 border-[#051245] bg-card-gradient p-4 shadow-xl">
+      <div className="m-2 flex flex-row items-center gap-4">
         <Image
           className="rounded-full"
           src={photo}
@@ -31,7 +31,7 @@ export default function Card({
         />
         <div className="flex flex-col">
           <div>{name}</div>
-          <div>{position}</div>
+          <div className="text-[#14E410]">{position}</div>
           <div>socasd</div>
         </div>
       </div>

@@ -43,7 +43,7 @@ export default function OurServices() {
       <h2 className="py-10">
         Our <b>Services</b>
       </h2>
-      <div className="flex flex-col gap-20 ">
+      <div className="mt-16 flex flex-col gap-20">
         {contents.map((content, i) => (
           <Item key={`services_${i}`} {...content} reverse={i % 2 === 1} />
         ))}
