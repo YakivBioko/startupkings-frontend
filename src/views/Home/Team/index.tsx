@@ -6,7 +6,7 @@ const members: CardProps[] = [
   {
     name: "Joe Duque",
     position: "CEO",
-    photo: "/assets/images/home/team/joe.jpg",
+    photo: "/assets/images/home/team/joe.png",
     description:
       "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be Joe Duque is a visionary leader with a passion for technology and innovation. With years of experience in the industry, he guides our web agency towards success.",
     socials: {},
@@ -14,7 +14,7 @@ const members: CardProps[] = [
   {
     name: "Ryo Kanazawa",
     position: "CTO",
-    photo: "/assets/images/home/team/syed.png",
+    photo: "/assets/images/home/team/ryo.png",
     description:
       "As a visionary leader, the CTO at StartupKings is responsible for identifying emerging technologies that align with the company's goals and objectives. They continuously explore new avenues to leverage these technologies effectively to provide cutting-edge solutions to clients.",
     socials: {},

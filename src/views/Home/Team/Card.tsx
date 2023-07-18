@@ -32,7 +32,6 @@ export default function Card({
         <div className="flex flex-col">
           <div>{name}</div>
           <div className="text-[#14E410]">{position}</div>
-          <div>socasd</div>
         </div>
       </div>
       <p>{description}</p>
