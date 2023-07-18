@@ -1,9 +1,7 @@
-// import { Inter } from "next/font/google";
 import localFont from "next/font/local";
-import "./globals.css";
-import { Navbar } from "@/components";
 
-// const inter = Inter({ subsets: ["latin"] });
+import { Footer, Navbar } from "@/components";
+import "./globals.css";
 
 const poppins = localFont({
   src: [
@@ -116,6 +114,7 @@ export default function RootLayout({
       <body className={poppins.className}>
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

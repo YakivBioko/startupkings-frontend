@@ -8,7 +8,7 @@ export default function Companies({
   return (
     <div
       className={[
-        "flex items-center justify-center flex-wrap gap-[30px_58px]",
+        "flex items-center justify-center flex-wrap gap-[30px_58px] py-20",
         className,
       ].join(" ")}
       {...props}

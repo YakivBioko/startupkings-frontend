@@ -12,10 +12,13 @@ export default function HowItWorks({
   ...props
 }: HTMLAttributes<HTMLDivElement>) {
   return (
-    <div className={["text-white text-center", className].join(" ")} {...props}>
-      <div className="text-[58px] leading-[1.277] -tracking-[1.74px] mx-auto">
-        How <span className="font-bold">It Works</span>
-      </div>
+    <div
+      className={["text-white text-center py -20", className].join(" ")}
+      {...props}
+    >
+      <h2 className="mx-auto">
+        How <b>It Works</b>
+      </h2>
       <div className="mt-[59px] rounded-[10px] border border-[#051245] bg-[linear-gradient(138deg,#05042F_0%,#050E3E_100%)] px-[69px] py-[78px] grid grid-cols-4 font-bold leading-[1.587] -tracking-[0.48px] gap-[30px] xl:gap-[56px]">
         <Badge className="gap-[25px] flex-col justify-between px-[26px] py-[77px] bg-[linear-gradient(138deg,#05042F_0%,#050E3E_100%))] md:px-0 md:py-0 md:bg-transparent">
           <div className="rounded-full px-[33px] py-[10px] bg-[#D67F04]">

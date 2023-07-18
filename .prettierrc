@@ -1,0 +1,15 @@
+{
+  "endOfLine": "auto",
+  "trailingComma": "es5",
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "overrides": [
+    {
+      "files": ["*.css", "*.scss", "*.html"],
+      "options": {
+        "tabWidth": 4
+      }
+    }
+  ]
+}
