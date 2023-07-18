@@ -1,5 +1,4 @@
 "use client";
-"use client";
 
 import React from "react";
 
@@ -39,7 +38,7 @@ const Hello = () => {
   };
 
   return (
-    <div>
+    <>
       <m.div
         className="mb-[19px] text-6xl font-bold leading-[1.277] -tracking-[1.74px] text-white"
         style={{ overflow: "hidden", display: "flex" }}
@@ -71,7 +70,7 @@ const Hello = () => {
           Startup
         </m.span>
       </m.div>
-    </div>
+    </>
   );
 };
 
