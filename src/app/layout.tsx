@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/react";
 import localFont from "next/font/local";
 
 import { Footer, Header } from "@/components";
@@ -120,6 +121,7 @@ export default function RootLayout({
           {children}
         </LazyMotion>
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
