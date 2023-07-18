@@ -1,4 +1,5 @@
 import { HTMLAttributes } from "react";
+
 import Image from "next/image";
 
 export default function Companies({
@@ -8,12 +9,12 @@ export default function Companies({
   return (
     <div
       className={[
-        "flex items-center justify-center flex-wrap gap-[30px_58px] py-20",
+        "flex flex-wrap items-center justify-center gap-[30px_58px] py-20",
         className,
       ].join(" ")}
       {...props}
     >
-      <div className="text-[18px] text-[#DCD3FB] font-bold -tracking-[0.54px] -mr-[30px] text-center md:text-left">
+      <div className="-mr-[30px] text-center text-[18px] font-bold -tracking-[0.54px] text-[#DCD3FB] md:text-left">
         Trusted by leading enterprises
         <br />
         and startups

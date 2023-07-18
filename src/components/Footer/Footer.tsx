@@ -1,12 +1,13 @@
 import React from "react";
+
 import Image from "next/image";
 
-import { SkypeIcon, TwitterIcon, DiscordIcon } from "@/components/Icons";
+import { DiscordIcon, SkypeIcon, TwitterIcon } from "@/components/Icons";
 
 export default function Footer() {
   return (
-    <footer className="px-10 py-4 flex flex-col items-center bg-[#051245]">
-      <div className="flex pb-2 flex-row items-center w-full justify-around border-b border-b-[#152b70]">
+    <footer className="flex flex-col items-center bg-[#051245] px-10 py-4">
+      <div className="flex w-full flex-row items-center justify-around border-b border-b-[#152b70] pb-2">
         <Image
           src="/assets/images/logo.png"
           alt="logo"
@@ -17,17 +18,17 @@ export default function Footer() {
           <div>Find Us On Social Media:</div>
           <div className="flex flex-row items-center justify-center gap-2">
             <a href="http://" target="_blank">
-              <div className="border border-white rounded-full max-w-min p-[2px]">
+              <div className="max-w-min rounded-full border border-white p-[2px]">
                 <SkypeIcon />
               </div>
             </a>
             <a href="http://" target="_blank">
-              <div className="border border-white rounded-full max-w-min p-[2px]">
+              <div className="max-w-min rounded-full border border-white p-[2px]">
                 <TwitterIcon />
               </div>
             </a>
             <a href="http://" target="_blank">
-              <div className="border border-white rounded-full max-w-min p-[2px]">
+              <div className="max-w-min rounded-full border border-white p-[2px]">
                 <DiscordIcon />
               </div>
             </a>

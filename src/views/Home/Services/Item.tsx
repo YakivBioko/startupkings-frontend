@@ -1,4 +1,5 @@
 import React from "react";
+
 import Image from "next/image";
 
 export interface ItemProps {
@@ -21,7 +22,7 @@ export default function Item({
   return (
     <div
       className={
-        "flex justify-around items-center " +
+        "flex items-center justify-around " +
         (reverse ? "flex-row-reverse" : "flex-row")
       }
     >

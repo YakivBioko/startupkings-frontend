@@ -49,6 +49,7 @@ h2 {
     font-size: 58px;
     line-height: 127.7%; /* 74.066px */
     letter-spacing: -1.74px;
+    @apply my-3;
 }
 
 h4 {

@@ -1,22 +1,26 @@
 import {
-  Header,
+  Achievement,
   Companies,
+  Header,
   HowItWorks,
-  SmarterWay,
   ReadyToStart,
   Services,
+  SmarterWay,
+  Team,
 } from "@/views/Home";
 
 export default function Page() {
   return (
     <>
-      <div className="min-h-[100vh] bg-[url('/assets/images/home/background-desktop.svg')] absolute left-0 top-0 w-full h-full bg-[length:100%_100%] -z-[1]" />
-      <Header className="relative px-[90px] pt-[236px] min-h-[100vh]" />
+      <div className="absolute left-0 top-0 -z-[1] h-full min-h-[100vh] w-full bg-[url('/assets/images/home/background-desktop.svg')] bg-[length:100%_100%]" />
+      <Header className="relative min-h-[100vh] px-[90px] pt-[236px]" />
       <HowItWorks className="px-[90px]" />
-      <Companies className="px-[60px] flex-col md:flex-row lg:px-[110px] xl:px-[148px]" />
+      <Companies className="flex-col px-[60px] md:flex-row lg:px-[110px] xl:px-[148px]" />
       <SmarterWay />
       <ReadyToStart />
       <Services />
+      <Team />
+      <Achievement />
     </>
   );
 }

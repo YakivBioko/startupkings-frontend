@@ -1,5 +1,7 @@
 import { HTMLAttributes } from "react";
+
 import Image from "next/image";
+
 import { Badge } from "@/components";
 
 export default function SmarterWay({
@@ -19,7 +21,7 @@ export default function SmarterWay({
 
       <div className="relative mt-[120px] grid grid-cols-2 gap-[500px_170px] text-[20px]">
         <div className="flex gap-[19px]">
-          <Badge className="min-w-[56px] h-[56px] font-bold bg-[#9C7EFF]">
+          <Badge className="h-[56px] min-w-[56px] bg-[#9C7EFF] font-bold">
             1
           </Badge>
           <div>
@@ -33,7 +35,7 @@ export default function SmarterWay({
         </div>
 
         <div className="flex gap-[19px]">
-          <Badge className="min-w-[56px] h-[56px] font-bold bg-[#9C7EFF]">
+          <Badge className="h-[56px] min-w-[56px] bg-[#9C7EFF] font-bold">
             2
           </Badge>
           <div>
@@ -55,7 +57,7 @@ export default function SmarterWay({
         />
 
         <div className="flex gap-[19px]">
-          <Badge className="min-w-[56px] h-[56px] font-bold bg-[#9C7EFF]">
+          <Badge className="h-[56px] min-w-[56px] bg-[#9C7EFF] font-bold">
             3
           </Badge>
           <div>
@@ -69,7 +71,7 @@ export default function SmarterWay({
         </div>
 
         <div className="flex gap-[19px]">
-          <Badge className="min-w-[56px] h-[56px] font-bold bg-[#9C7EFF]">
+          <Badge className="h-[56px] min-w-[56px] bg-[#9C7EFF] font-bold">
             4
           </Badge>
           <div>

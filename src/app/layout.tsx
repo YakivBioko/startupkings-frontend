@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 
 import { Footer, Navbar } from "@/components";
+
 import "./globals.css";
 
 const poppins = localFont({

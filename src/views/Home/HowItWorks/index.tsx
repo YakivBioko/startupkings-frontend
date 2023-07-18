@@ -1,3 +1,5 @@
+import { HTMLAttributes } from "react";
+
 import {
   Badge,
   BudgetIcon,
@@ -5,7 +7,6 @@ import {
   PhoneIcon,
   TeamIcon,
 } from "@/components";
-import { HTMLAttributes } from "react";
 
 export default function HowItWorks({
   className,
@@ -13,15 +14,15 @@ export default function HowItWorks({
 }: HTMLAttributes<HTMLDivElement>) {
   return (
     <div
-      className={["text-white text-center py -20", className].join(" ")}
+      className={["py -20 text-center text-white", className].join(" ")}
       {...props}
     >
       <h2 className="mx-auto">
         How <b>It Works</b>
       </h2>
-      <div className="mt-[59px] rounded-[10px] border border-[#051245] bg-[linear-gradient(138deg,#05042F_0%,#050E3E_100%)] px-[69px] py-[78px] grid grid-cols-4 font-bold leading-[1.587] -tracking-[0.48px] gap-[30px] xl:gap-[56px]">
-        <Badge className="gap-[25px] flex-col justify-between px-[26px] py-[77px] bg-[linear-gradient(138deg,#05042F_0%,#050E3E_100%))] md:px-0 md:py-0 md:bg-transparent">
-          <div className="rounded-full px-[33px] py-[10px] bg-[#D67F04]">
+      <div className="mt-[59px] grid grid-cols-4 gap-[30px] rounded-[10px] border border-[#051245] bg-[linear-gradient(138deg,#05042F_0%,#050E3E_100%)] px-[69px] py-[78px] font-bold leading-[1.587] -tracking-[0.48px] xl:gap-[56px]">
+        <Badge className="bg-[linear-gradient(138deg,#05042F_0%,#050E3E_100%))] flex-col justify-between gap-[25px] px-[26px] py-[77px] md:bg-transparent md:px-0 md:py-0">
+          <div className="rounded-full bg-[#D67F04] px-[33px] py-[10px]">
             <BudgetIcon />
           </div>
           <p className="text-[#FFD4D4]">
@@ -29,8 +30,8 @@ export default function HowItWorks({
           </p>
         </Badge>
 
-        <Badge className="gap-[25px] flex-col justify-between">
-          <div className="rounded-full px-[33px] py-[10px] bg-[#152B70]">
+        <Badge className="flex-col justify-between gap-[25px]">
+          <div className="rounded-full bg-[#152B70] px-[33px] py-[10px]">
             <DetailIcon />
           </div>
           <p className="text-[#FFD4D4]">
@@ -38,8 +39,8 @@ export default function HowItWorks({
           </p>
         </Badge>
 
-        <Badge className="gap-[25px] flex-col justify-between">
-          <div className="rounded-full px-[33px] py-[10px] bg-[#617389]">
+        <Badge className="flex-col justify-between gap-[25px]">
+          <div className="rounded-full bg-[#617389] px-[33px] py-[10px]">
             <PhoneIcon />
           </div>
           <p className="text-[#FFD4D4]">
@@ -47,8 +48,8 @@ export default function HowItWorks({
           </p>
         </Badge>
 
-        <Badge className="gap-[25px] flex-col justify-between">
-          <div className="rounded-full px-[33px] py-[10px] bg-[#9C7EFF]">
+        <Badge className="flex-col justify-between gap-[25px]">
+          <div className="rounded-full bg-[#9C7EFF] px-[33px] py-[10px]">
             <TeamIcon />
           </div>
           <p className="text-[#FFD4D4]">
