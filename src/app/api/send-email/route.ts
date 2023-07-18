@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
 
   const mailOptions = {
     from: process.env.SMTP_USER!,
-    to: "lunazreturn@gamil.com",
+    to: process.env.SMTP_TO!,
     subject: `Request from ${res.from}`,
     text: res.message,
   };
