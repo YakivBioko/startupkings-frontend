@@ -7,7 +7,7 @@ export async function POST(request: NextRequest) {
   const res: SendEmailProps = await request.json();
   console.log(res);
 
-  if (!!res.from || !!res.message) {
+  if (!res.from || !res.message) {
     return NextResponse.json({ error: "Invaild request" }, { status: 400 });
   }
 
