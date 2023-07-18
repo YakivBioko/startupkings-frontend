@@ -1,5 +1,7 @@
 import { HTMLAttributes } from "react";
 
-export interface BadgeProps extends HTMLAttributes<HTMLDivElement> {
+import { HTMLMotionProps } from "@/libs/framer-motion";
+
+export interface BadgeProps extends HTMLMotionProps<"div"> {
   variant?: string;
 }

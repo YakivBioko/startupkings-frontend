@@ -1,4 +1,4 @@
-import { HTMLAttributes } from "react";
+"use client";
 
 import {
   Badge,
@@ -7,19 +7,28 @@ import {
   PhoneIcon,
   TeamIcon,
 } from "@/components";
+import {
+  HTMLMotionProps,
+  LayoutGroup,
+  m,
+  motion,
+  Variants,
+} from "@/libs/framer-motion";
 
 export default function HowItWorks({
   className,
   ...props
-}: HTMLAttributes<HTMLDivElement>) {
+}: HTMLMotionProps<"section">) {
   return (
-    <div
+    <m.section
+      layout
       className={["py -20 text-center text-white", className].join(" ")}
       {...props}
     >
       <h2 className="mx-auto">
         How <b>It Works</b>
       </h2>
+
       <div className="mt-[59px] grid grid-cols-4 gap-[30px] rounded-[10px] border border-[#051245] bg-[linear-gradient(138deg,#05042F_0%,#050E3E_100%)] px-[69px] py-[78px] font-bold leading-[1.587] -tracking-[0.48px] xl:gap-[56px]">
         <Badge className="bg-[linear-gradient(138deg,#05042F_0%,#050E3E_100%))] flex-col justify-between gap-[25px] px-[26px] py-[77px] md:bg-transparent md:px-0 md:py-0">
           <div className="rounded-full bg-[#D67F04] px-[33px] py-[10px]">
@@ -57,6 +66,6 @@ export default function HowItWorks({
           </p>
         </Badge>
       </div>
-    </div>
+    </m.section>
   );
 }

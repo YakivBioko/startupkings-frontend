@@ -1,6 +1,7 @@
 import localFont from "next/font/local";
 
-import { Footer, Navbar } from "@/components";
+import { Footer, Header } from "@/components";
+import { domAnimation, LazyMotion } from "@/libs/framer-motion";
 
 import "./globals.css";
 
@@ -113,8 +114,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={poppins.className}>
-        <Navbar />
-        {children}
+        <Header />
+        <LazyMotion features={domAnimation} strict>
+          {children}
+        </LazyMotion>
         <Footer />
       </body>
     </html>

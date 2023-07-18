@@ -2,11 +2,12 @@ import { HTMLAttributes } from "react";
 
 import Image from "next/image";
 
-import { RightArrowIcon } from "@/components";
+import { AnimatedTextWord, RightArrowIcon } from "@/components";
 
 import Circle from "./Circle";
+import Hello from "./Hello";
 
-export default function Header({
+export default function Hero({
   className,
   ...props
 }: HTMLAttributes<HTMLDivElement>) {
@@ -27,12 +28,13 @@ export default function Header({
           <Circle className="text-[#14E410]" />
           <Circle className="text-[#9C7EFF]" />
         </div>
-        <span className="mb-[19px] text-[58px] font-bold leading-[1.277] -tracking-[1.74px] text-white">
+        {/* <span className="mb-[19px] text-[58px] font-bold leading-[1.277] -tracking-[1.74px] text-white">
           <span className="text-[#C27E01]">Get</span> The Perfect&nbsp;
           <span className="text-[#14E410]">Talent</span>
           <br />
           For Your <span className="text-[#D67F04]">Startup</span>
-        </span>
+        </span> */}
+        <Hello />
         <p className="mb-[25px] mt-[18px] text-[18px] leading-[158.7%] -tracking-[0.54px] text-white">
           Hire Pre-Vetted Remote Developers, Designers & Product Managers With
           World Class Technical And Communication Skills, Without Worrying About
