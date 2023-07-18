@@ -2,6 +2,8 @@ import { HTMLAttributes } from "react";
 
 import Image from "next/image";
 
+import { Parallax } from "@/components";
+
 export default function Companies({
   className,
   ...props
@@ -19,31 +21,33 @@ export default function Companies({
         <br />
         and <b>startups</b>
       </div>
-      <Image
-        src="/assets/images/home/shippo.png"
-        alt="shippo"
-        width={201}
-        height={62}
-      />
-      <Image
-        src="/assets/images/home/sardine.png"
-        alt="sardine"
-        width={221}
-        height={123}
-        className="-my-[25px]"
-      />
-      <Image
-        src="/assets/images/home/intuit.png"
-        alt="intuit"
-        width={160}
-        height={33}
-      />
-      <Image
-        src="/assets/images/home/dell.png"
-        alt="dell"
-        width={71}
-        height={70}
-      />
+      <Parallax baseVelocity={5} className="max-w-2xl">
+        <Image
+          src="/assets/images/home/shippo.png"
+          alt="shippo"
+          width={201}
+          height={62}
+        />
+        <Image
+          src="/assets/images/home/sardine.png"
+          alt="sardine"
+          width={221}
+          height={123}
+          className="-my-[25px]"
+        />
+        <Image
+          src="/assets/images/home/intuit.png"
+          alt="intuit"
+          width={160}
+          height={33}
+        />
+        <Image
+          src="/assets/images/home/dell.png"
+          alt="dell"
+          width={71}
+          height={70}
+        />
+      </Parallax>
     </div>
   );
 }

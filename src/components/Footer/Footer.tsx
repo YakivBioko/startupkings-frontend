@@ -17,17 +17,25 @@ export default function Footer() {
         <div className="flex flex-col gap-4">
           <div>Find Us On Social Media:</div>
           <div className="flex flex-row items-center justify-center gap-2">
-            <a href="http://" target="_blank">
+            <a
+              href="https://join.skype.com/invite/q9bKgELmkd4m"
+              target="_blank"
+              rel="noopener"
+            >
               <div className="max-w-min rounded-full border border-white p-[2px]">
                 <SkypeIcon />
               </div>
             </a>
-            <a href="http://" target="_blank">
+            <a href="https://twitter.com" target="_blank" rel="noopener">
               <div className="max-w-min rounded-full border border-white p-[2px]">
                 <TwitterIcon />
               </div>
             </a>
-            <a href="http://" target="_blank">
+            <a
+              href="https://discord.gg/kkvMCe6WEX"
+              target="_blank"
+              rel="noopener"
+            >
               <div className="max-w-min rounded-full border border-white p-[2px]">
                 <DiscordIcon />
               </div>
@@ -36,7 +44,7 @@ export default function Footer() {
         </div>
         <div>
           <div className="">We&apos;re Always Happy To Help</div>
-          <a href="http://">hello@startupkings.co</a>
+          <a href="mailto:hello@startupkings.co">hello@startupkings.co</a>
         </div>
       </div>
       <div className="pt-2">Copyright © 2023 StartupKings</div>

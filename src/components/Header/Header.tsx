@@ -42,12 +42,14 @@ export default function Header(props: HeaderProps) {
       variants={headerVariants}
       {...props}
     >
-      <Image
-        src="/assets/images/logo.png"
-        alt="logo"
-        width={210}
-        height={120}
-      />
+      <Link href="#home">
+        <Image
+          src="/assets/images/logo.png"
+          alt="logo"
+          width={210}
+          height={120}
+        />
+      </Link>
       <div className="flex items-center gap-[50px] text-[14px] font-bold leading-[1.437] -tracking-[0.56px] text-white">
         <Link href="#home">Home</Link>
         <Link href="#testinominals" scroll={false}>

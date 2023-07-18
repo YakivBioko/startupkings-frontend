@@ -4,32 +4,32 @@ import Card, { CardProps } from "./Card";
 
 const contents: CardProps[] = [
   {
-    name: "Joe Duque",
+    name: "John Smith",
     position: "GENERAL DIRECTOR",
-    photo: "/assets/images/home/team/peter.png",
+    photo: "/assets/images/home/testinominals/jhon.png",
     description:
-      "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be mentored by a seasoned VP Engineering!",
+      "Working with StartupKings has been an absolute pleasure! Their team of experts delivered a top-notch web development solution for our company. The website they built was not only visually appealing but also highly functional and user-friendly. I highly recommend their services to anyone looking for exceptional software development.",
   },
   {
-    name: "Joe Duque",
-    position: "GENERAL DIRECTOR",
-    photo: "/assets/images/home/team/peter.png",
+    name: "Emily",
+    position: "Marketing Manager",
+    photo: "/assets/images/home/testinominals/emily.png",
     description:
-      "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be mentored by a seasoned VP Engineering!",
+      "We engaged StartupKings to take charge of our social marketing campaigns, and we couldn't be happier with the results! Their expertise in crafting effective marketing strategies combined with their profound knowledge of AI-based tools have significantly boosted our online presence and customer engagement levels.",
   },
   {
-    name: "Joe Duque",
-    position: "GENERAL DIRECTOR",
-    photo: "/assets/images/home/team/peter.png",
+    name: "Lucas",
+    position: "Technical Lead",
+    photo: "/assets/images/home/testinominals/lucas.png",
     description:
-      "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be mentored by a seasoned VP Engineering!",
+      "Collaborating with StartupKings on multiple projects involving web development has exceeded all expectations set forth by us at LMN Industries. Their attention to detail is commendable as they meticulously crafted each page ensuring seamless functionality across different platforms and devices.",
   },
   {
-    name: "Joe Duque",
-    position: "GENERAL DIRECTOR",
-    photo: "/assets/images/home/team/peter.png",
+    name: "Mia",
+    position: "Marketing Manager",
+    photo: "/assets/images/home/testinominals/mia.png",
     description:
-      "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be mentored by a seasoned VP Engineering!",
+      "StartupKings' team truly excels in creating innovative solutions by leveraging artificial intelligence techniques. With their guidance and support, we were able to streamline our marketing efforts through automated processes that increased efficiency while reducing costs",
   },
 ];
 

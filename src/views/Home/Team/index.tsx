@@ -6,33 +6,33 @@ const members: CardProps[] = [
   {
     name: "Joe Duque",
     position: "CEO",
-    photo: "/assets/images/home/team/peter.png",
+    photo: "/assets/images/home/team/joe.jpg",
     description:
       "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be Joe Duque is a visionary leader with a passion for technology and innovation. With years of experience in the industry, he guides our web agency towards success.",
     socials: {},
   },
   {
-    name: "Joe Duque",
-    position: "CEO",
-    photo: "/assets/images/home/team/peter.png",
+    name: "Ryo Kanazawa",
+    position: "CTO",
+    photo: "/assets/images/home/team/syed.png",
     description:
-      "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be Joe Duque is a visionary leader with a passion for technology and innovation. With years of experience in the industry, he guides our web agency towards success.",
+      "As a visionary leader, the CTO at StartupKings is responsible for identifying emerging technologies that align with the company's goals and objectives. They continuously explore new avenues to leverage these technologies effectively to provide cutting-edge solutions to clients.",
     socials: {},
   },
   {
-    name: "Joe Duque",
-    position: "CEO",
+    name: "Peter",
+    position: "Adviser",
     photo: "/assets/images/home/team/peter.png",
     description:
-      "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be Joe Duque is a visionary leader with a passion for technology and innovation. With years of experience in the industry, he guides our web agency towards success.",
+      "Peter provides valuable guidance and expertise to the company, leveraging their industry knowledge and experience to support strategic decision-making and drive growth.",
     socials: {},
   },
   {
-    name: "Joe Duque",
-    position: "CEO",
-    photo: "/assets/images/home/team/peter.png",
+    name: "Julie",
+    position: "Marketing Manager",
+    photo: "/assets/images/home/team/julie.png",
     description:
-      "I feel inspired because I get to work on bold new ideas. It's also great to hear feedback from and be Joe Duque is a visionary leader with a passion for technology and innovation. With years of experience in the industry, he guides our web agency towards success.",
+      "The Marketing Manager at StartupKings spearheads the development and execution of comprehensive marketing strategies, leveraging their expertise to enhance brand visibility, drive customer engagement, and boost business growth.",
     socials: {},
   },
 ];
