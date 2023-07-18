@@ -6,7 +6,5 @@ export interface SendEmailProps {
 }
 
 export const sendEmail = async (props: SendEmailProps) => {
-  //
-  const result = await api.post("/send-email", props);
-  console.log(result);
+  await api.post("/send-email", props);
 };

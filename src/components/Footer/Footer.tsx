@@ -2,7 +2,12 @@ import React from "react";
 
 import Image from "next/image";
 
-import { DiscordIcon, SkypeIcon, TwitterIcon } from "@/components/Icons";
+import {
+  DiscordIcon,
+  InstagramIcon,
+  SkypeIcon,
+  TwitterIcon,
+} from "@/components/Icons";
 
 export default function Footer() {
   return (
@@ -24,6 +29,15 @@ export default function Footer() {
             >
               <div className="max-w-min rounded-full border border-white p-[2px]">
                 <SkypeIcon />
+              </div>
+            </a>
+            <a
+              href="https://instagram.com/the.startupkings?igshid=NGExMmI2YTkyZg=="
+              target="_blank"
+              rel="noopener"
+            >
+              <div className="max-w-min rounded-full border border-white p-[2px]">
+                <InstagramIcon />
               </div>
             </a>
             <a href="https://twitter.com" target="_blank" rel="noopener">

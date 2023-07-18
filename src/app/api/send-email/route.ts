@@ -43,9 +43,9 @@ export async function POST(request: NextRequest) {
   });
 
   try {
-    const result = await sendmail;
+    await sendmail;
 
-    return NextResponse.json({ result }, { status: 200 });
+    return NextResponse.json({ status: "Ok" }, { status: 200 });
   } catch (error) {
     console.error(error);
     return NextResponse.json(
