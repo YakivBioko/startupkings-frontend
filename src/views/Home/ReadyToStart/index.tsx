@@ -9,12 +9,12 @@ export default function ReadyToStart({
   return (
     <section
       className={[
-        "relative flex flex-col items-center gap-[38px] bg-[url('/assets/images/home/ready_background.svg')] bg-cover px-[100px] pb-[71px] pt-[90px]",
+        "relative flex flex-col items-center gap-[38px] bg-[url('/assets/images/home/ready_background.svg')] bg-cover px-12 pb-[71px] pt-[90px] md:px-[100px]",
         className,
       ].join(" ")}
       {...props}
     >
-      <h2 className="text-[58px] font-light leading-[1.277] -tracking-[1.74px] text-white">
+      <h2 className="text-[30px] leading-[1.277] -tracking-[1.74px] text-white md:text-[58px]">
         <b>Ready to contract talent</b> in a new,
         <br />
         smarter way&nbsp;

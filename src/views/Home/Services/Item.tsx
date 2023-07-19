@@ -44,15 +44,20 @@ export default function Item({
     >
       <m.div
         className={
-          "flex items-center justify-around " +
-          (reverse ? "flex-row-reverse" : "flex-row")
+          "mx-auto flex max-w-[348px] flex-col items-center justify-between gap-10 lg:max-w-7xl " +
+          (reverse ? "lg:flex-row-reverse" : "lg:flex-row")
         }
         variants={cardVariants}
       >
+        {/* <Image src={image} alt="logo" width={width} height={height} /> */}
         <Image src={image} alt="logo" width={width} height={height} />
         <div className="flex flex-col gap-2">
-          <h4>{title} : </h4>
-          <p className="max-w-md">{description}</p>
+          <h4 className="mb-4 text-center text-[20px] font-bold lg:text-left lg:text-[28px]">
+            {title} :{" "}
+          </h4>
+          <p className="text-center text-[16px] lg:max-w-md lg:text-left lg:text-[18px]">
+            {description}
+          </p>
         </div>
       </m.div>
     </m.div>
