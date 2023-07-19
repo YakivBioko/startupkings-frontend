@@ -1,6 +1,7 @@
 import React from "react";
 
 import Image from "next/image";
+
 import { FacebookIcon, InstagramIcon, TwitterIcon } from "@/components";
 export interface CardProps {
   name: string;
