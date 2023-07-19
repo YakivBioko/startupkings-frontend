@@ -46,7 +46,7 @@ export default function Card({
           </div>
         </div>
       </div>
-      <p>{description}</p>
+      <p className="text-center md:text-left">{description}</p>
     </div>
   );
 }
