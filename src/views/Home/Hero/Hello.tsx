@@ -40,7 +40,7 @@ const Hello = () => {
   return (
     <>
       <m.div
-        className="mb-[19px] text-6xl font-bold leading-[1.277] -tracking-[1.74px] text-white"
+        className="mb-[19px] min-w-[330px] justify-center text-6xl text-[30px] font-bold leading-[1.277] -tracking-[1.74px] text-white md:justify-start lg:text-[40px] xl:text-[58px]"
         style={{ overflow: "hidden", display: "flex" }}
         variants={container}
         initial="hidden"
@@ -57,7 +57,7 @@ const Hello = () => {
         </m.span>
       </m.div>
       <m.div
-        className="mb-[19px] text-6xl font-bold leading-[1.277] -tracking-[1.74px] text-white"
+        className="mb-[19px] justify-center text-6xl text-[30px] font-bold leading-[1.277] -tracking-[1.74px] text-white md:justify-start lg:text-[40px] xl:text-[58px]"
         style={{ overflow: "hidden", display: "flex" }}
         variants={container}
         initial="hidden"

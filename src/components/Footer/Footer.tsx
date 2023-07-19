@@ -12,7 +12,7 @@ import {
 export default function Footer() {
   return (
     <footer className="flex flex-col items-center bg-[#051245] px-10 py-4">
-      <div className="flex w-full flex-row items-center justify-around border-b border-b-[#152b70] pb-2">
+      <div className="flex w-full flex-col items-center justify-around gap-12 border-b border-b-[#152b70] pb-2 md:flex-row">
         <Image
           src="/assets/images/logo.png"
           alt="logo"
