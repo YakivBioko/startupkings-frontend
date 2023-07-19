@@ -16,11 +16,13 @@ export default function Card({
   description,
 }: CardProps) {
   return (
-    <div className="flex min-w-[36rem] max-w-xl flex-row items-center gap-2 rounded-xl border-2 border-[#051245] bg-card-gradient p-4 shadow-xl">
+    <div className="mx-auto flex max-w-xl flex-col-reverse items-center gap-2 rounded-xl border-2 border-[#051245] bg-card-gradient p-4 shadow-xl lg:flex-row">
       <div className="flex flex-col gap-1">
-        <div>{name}</div>
-        <div className="mb-1 uppercase text-[#14E410]">{position}</div>
-        <p>{description}</p>
+        <div className="text-center lg:text-left">{name}</div>
+        <div className="mb-1 text-center uppercase text-[#14E410] lg:text-left">
+          {position}
+        </div>
+        <p className="text-center lg:text-left">{description}</p>
       </div>
       <Image
         className="m-2 rounded-full"

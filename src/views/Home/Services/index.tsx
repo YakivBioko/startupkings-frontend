@@ -40,13 +40,13 @@ const contents: ItemProps[] = [
 export default function OurServices() {
   return (
     <section className="px-12 py-20">
-      <h2 className="hidden py-10 text-[58px] md:block">
+      <h2 className="hidden py-10 text-[58px] lg:block">
         Our <b>Services</b>
       </h2>
-      <h2 className="block py-10 text-[30px] md:hidden">
+      <h2 className="block py-10 text-[30px] lg:hidden">
         The Rapid <b>Rise of AI </b>
       </h2>
-      <div className="mt-16 flex flex-col gap-9 md:gap-44">
+      <div className="mt-16 flex flex-col gap-9 lg:gap-44">
         {contents.map((content, i) => (
           <Item key={`services_${i}`} {...content} reverse={i % 2 === 1} />
         ))}

@@ -7,3 +7,4 @@ export { default as RightArrowIcon } from "./RightArrow";
 export { default as SkypeIcon } from "./Skype";
 export { default as TeamIcon } from "./Team";
 export { default as TwitterIcon } from "./Twitter";
+export { default as FacebookIcon } from "./Facebook";

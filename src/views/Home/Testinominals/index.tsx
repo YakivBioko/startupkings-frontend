@@ -35,13 +35,13 @@ const contents: CardProps[] = [
 
 export default function Testinominals() {
   return (
-    <section id="testinominals" className="px-10 py-20">
-      <h2>Testinominals</h2>
-      <p className="text-center">
+    <section id="testinominals" className="px-12 py-20">
+      <h2 className="text-[30px] font-bold lg:text-[58px]">Testinominals</h2>
+      <p className="text-center text-[16px] lg:text-[18px]">
         Work with contractors that are excited about working with you
       </p>
 
-      <div className="mt-16 flex flex-row flex-wrap items-center justify-center gap-12">
+      <div className="mt-16 grid grid-cols-1 gap-12 lg:grid-cols-2">
         {contents.map((feedback, i) => (
           <Card key={`memeber_${i}`} {...feedback} />
         ))}

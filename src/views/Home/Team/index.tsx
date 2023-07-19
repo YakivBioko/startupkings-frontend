@@ -39,12 +39,12 @@ const members: CardProps[] = [
 
 export default function Team() {
   return (
-    <section className="px-10 py-20" id="meet-team">
-      <h2>
+    <section className="px-12 pb-24 pt-48 md:pb-64 md:pt-64" id="meet-team">
+      <h2 className="text-[30px] md:text-[58px]">
         Meet <b>Our Team</b>
       </h2>
 
-      <div className="mt-16 flex flex-row flex-wrap items-center justify-center gap-12">
+      <div className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-2">
         {members.map((member, i) => (
           <Card key={`memeber_${i}`} {...member} />
         ))}
