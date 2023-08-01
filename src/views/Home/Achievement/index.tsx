@@ -22,18 +22,18 @@ export default function Achievement() {
         </p>
         <div className="mb-16 flex flex-col gap-9 md:flex-row md:gap-4">
           <div className="text-center md:text-left">
-            <div className="pb-2 text-[32px] font-bold text-[#14E410]">20+</div>
+            <div className="pb-2 text-[32px] font-bold text-[#14E410]">5+</div>
             <span className="text-[16px] md:text-[18px]">Companies served</span>
           </div>
           <div className="text-center md:text-left">
-            <div className="pb-2 text-[32px] font-bold text-[#D67F04]">8s+</div>
+            <div className="pb-2 text-[32px] font-bold text-[#D67F04]">3+</div>
             <span className="text-[16px] md:text-[18px]">
               Years of experience
             </span>
           </div>
           <div className="text-center md:text-left">
             <div className="pb-2 text-[32px] font-bold text-[#9C7EFF]">
-              3 days
+              1 day
             </div>
             <span className="text-[16px] md:text-[18px]">
               Average time-to-hire

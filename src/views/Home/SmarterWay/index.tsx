@@ -75,9 +75,9 @@ export default function SmarterWay({
             4
           </Badge>
           <div>
-            <h4 className="mb-[9px]">2-Week No-Risk Trial</h4>
+            <h4 className="mb-[9px]">1 Week No-Risk Trial</h4>
             <span className="text-[16px] -tracking-[0.54px] md:text-[18px]">
-              Our 2-week free trial allows you to work with our remote
+              Our 1 week free trial allows you to work with our remote
               developers for two weeks without paying any upfront charges and
               only pay if you are satisfied.
             </span>
