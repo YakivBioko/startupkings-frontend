@@ -13,7 +13,7 @@ const members: CardProps[] = [
   },
   {
     name: "Ryo Kanazawa",
-    position: "CTO",
+    position: "Co-founder, CTO",
     photo: "/assets/images/home/team/ryo.png",
     description:
       "As a visionary leader, the CTO at StartupKings is responsible for identifying emerging technologies that align with the company's goals and objectives. They continuously explore new avenues to leverage these technologies effectively to provide cutting-edge solutions to clients.",
@@ -28,9 +28,9 @@ const members: CardProps[] = [
     socials: {},
   },
   {
-    name: "Julie",
+    name: "Syed",
     position: "Marketing Manager",
-    photo: "/assets/images/home/team/julie.png",
+    photo: "/assets/images/home/team/syed.png",
     description:
       "The Marketing Manager at StartupKings spearheads the development and execution of comprehensive marketing strategies, leveraging their expertise to enhance brand visibility, drive customer engagement, and boost business growth.",
     socials: {},
@@ -41,7 +41,7 @@ export default function Team() {
   return (
     <section className="px-12 pb-24 pt-48 md:pb-64 md:pt-64" id="meet-team">
       <h2 className="text-[30px] md:text-[58px]">
-        Meet <b>Our Team</b>
+        Meet <b>Our Executives</b>
       </h2>
 
       <div className="mt-16 grid grid-cols-1 gap-12 md:grid-cols-2">
