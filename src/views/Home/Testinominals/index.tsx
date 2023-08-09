@@ -4,7 +4,7 @@ import Card, { CardProps } from "./Card";
 
 const contents: CardProps[] = [
   {
-    name: "John Smith",
+    name: "Johnny Chavez",
     position: "GENERAL DIRECTOR",
     photo: "/assets/images/home/testinominals/jhon.png",
     description:
@@ -18,9 +18,9 @@ const contents: CardProps[] = [
       "We engaged StartupKings to take charge of our social marketing campaigns, and we couldn't be happier with the results! Their expertise in crafting effective marketing strategies combined with their profound knowledge of AI-based tools have significantly boosted our online presence and customer engagement levels.",
   },
   {
-    name: "Lucas",
-    position: "Technical Lead",
-    photo: "/assets/images/home/testinominals/lucas.png",
+    name: "Sandra",
+    position: "Project Manager",
+    photo: "/assets/images/home/testinominals/sandra.png",
     description:
       "Collaborating with StartupKings on multiple projects involving web development has exceeded all expectations set forth by us at LMN Industries. Their attention to detail is commendable as they meticulously crafted each page ensuring seamless functionality across different platforms and devices.",
   },
