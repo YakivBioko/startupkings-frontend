@@ -1,4 +1,5 @@
 import { Analytics } from "@vercel/analytics/react";
+import type { Metadata } from "next";
 import localFont from "next/font/local";
 
 import { Footer, Header } from "@/components";
@@ -102,10 +103,10 @@ const poppins = localFont({
   display: "swap",
 });
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "StartupKings",
   description:
-    "Hire Pre-Vetted Remote Developers, Designers & Product Managers With World Class Technical And Communication Skills, Without Worrying About Crazy Fees Or The Legal Hassle.",
+    "Join us at StartupKings to craft your destiny. Whether your dream is an app, an online venture, or bolstering your local presence, we lead with AI innovation. Ignite your brand, magnify sales, and surge ahead with cutting-edge technology.",
 };
 
 export default function RootLayout({

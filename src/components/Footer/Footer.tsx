@@ -22,7 +22,7 @@ export default function Footer() {
         <div className="flex flex-col gap-4">
           <div>Find Us On Social Media:</div>
           <div className="flex flex-row items-center justify-center gap-2">
-            <a
+            {/* <a
               href="https://join.skype.com/invite/q9bKgELmkd4m"
               target="_blank"
               rel="noopener"
@@ -30,7 +30,7 @@ export default function Footer() {
               <div className="max-w-min rounded-full border border-white p-[2px]">
                 <SkypeIcon />
               </div>
-            </a>
+            </a> */}
             <a
               href="https://instagram.com/the.startupkings?igshid=NGExMmI2YTkyZg=="
               target="_blank"
@@ -45,7 +45,7 @@ export default function Footer() {
                 <TwitterIcon />
               </div>
             </a>
-            <a
+            {/* <a
               href="https://discord.gg/kkvMCe6WEX"
               target="_blank"
               rel="noopener"
@@ -53,7 +53,7 @@ export default function Footer() {
               <div className="max-w-min rounded-full border border-white p-[2px]">
                 <DiscordIcon />
               </div>
-            </a>
+            </a> */}
           </div>
         </div>
         <div>
