@@ -45,7 +45,7 @@ export default function Hero({
           </a>
         </div>
 
-        <div className="w-[400px] min-w-[270px]">
+        <div className="min-w-[270px] max-w-[335px] md:w-[400px]">
           <Image
             src="/assets/images/home/avatars.png"
             alt="avatars"
@@ -56,7 +56,7 @@ export default function Hero({
             <RingStar />
             <div className="flex flex-1 items-center justify-between">
               <span>Task Completed</span>
-              <span>20k</span>
+              <span>30</span>
             </div>
           </div>
         </div>

@@ -6,7 +6,6 @@ import { SubmitHandler, useForm } from "react-hook-form";
 import Image from "next/image";
 
 import { sendEmail, SendEmailProps } from "@/api";
-import { BookACall } from "@/components";
 
 export default function Contact() {
   const { register, handleSubmit } = useForm<SendEmailProps>({
@@ -19,7 +18,10 @@ export default function Contact() {
   };
 
   return (
-    <form className="px-20 py-20" onSubmit={handleSubmit(onSubmit)}>
+    <form
+      className="px-5 py-5 md:px-20 md:py-20"
+      onSubmit={handleSubmit(onSubmit)}
+    >
       <h2 id="contact" className="text-[30px] font-bold md:text-[58px]">
         Contact us
       </h2>
@@ -45,8 +47,8 @@ export default function Contact() {
           <BookACall />
         </div>
       </div> */}
-      <div className="m-auto mt-10 flex w-full rounded-md border-2 border-[#051245] bg-card-gradient px-16 py-10 shadow-xl">
-        <div className="sm:w-1/2 md:w-3/5">
+      <div className="m-auto mt-10 flex w-full flex-col rounded-md border-2 border-[#051245] bg-card-gradient px-4 py-4 shadow-xl md:flex-row md:px-16 md:py-10">
+        <div className="md:w-3/5">
           <h4 className="pb-8 text-center">
             Hire high-performing, on-demand
             <br />
@@ -60,20 +62,23 @@ export default function Contact() {
             />
             <input
               className="w-10/12 rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 placeholder-white outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
-              placeholder="Company email"
+              placeholder="Email"
               type="email"
             />
           </div>
-          <input
-            className="mt-12 w-full rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 placeholder-white outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
-            placeholder="Compnay name"
-            type="text"
-          />
-          <input
-            className="mt-12 w-full rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 placeholder-white outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
-            placeholder="Role at your company"
-            type="text"
-          />
+          <div className="flex justify-between">
+            <input
+              className="mr-2  mt-12 w-full rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 placeholder-white outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
+              placeholder="Compnay name"
+              type="text"
+            />
+            <input
+              className="mt-12 w-full rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 placeholder-white outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
+              placeholder="Role at your company"
+              type="text"
+            />
+          </div>
+
           <input
             className="mt-12 w-full rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 placeholder-white outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
             placeholder="Phone number"
@@ -92,45 +97,41 @@ export default function Contact() {
             <option>What do you need?</option>
             <option value="HID">Hire an individual developer</option>
             <option value="HTD">Build a team of developers</option>
-            <option value="GWB">Get to know X-Term better</option>
+            <option value="GWB">Get to know StartupKings better</option>
           </select>
 
           <select
             id="how-long"
             className="mt-12 w-full rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
           >
-            <option>How loing will you need X-Team?</option>
+            <option>How loing will you need StartupKings team?</option>
             <option value="less-month">less 1 month</option>
             <option value="between-month">1-3 month</option>
             <option value="more-month">3+ month</option>
           </select>
 
           <select
-            id="need-tern"
+            id="period"
             className="mt-12 w-full rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
           >
-            <option>How soon do you need X-Team?</option>
+            <option>How soon do you need StartupKings team?</option>
             <option value="less-week">1-2 weeks</option>
             <option value="between-week">2-4 weeks</option>
             <option value="more-week">4+ weeks</option>
           </select>
 
           <select
-            id="need-tern"
+            id="requirement"
             className="mt-12 w-full rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
           >
-            <option>What skills do you need?</option>
-            <option value="react-native">React Native</option>
-            <option value="react">React</option>
-            <option value="javascript">Javascript</option>
-            <option value="php">PHP</option>
-            <option value="ruby">Ruby</option>
-            <option value="java">Java</option>
-            <option value="python">Python</option>
+            <option>In which field do you want to get help?</option>
+            <option value="web">Web</option>
             <option value="mobile">Mobile</option>
-            <option value="devops">Devops</option>
             <option value="blockchain">Blockchain</option>
-            <option value="data">Data/DBA</option>
+            <option value="ai">AI/ML</option>
+            <option value="marketing">Marketing</option>
+            <option value="devops">Devops</option>
+            <option value="dba">Database Administrator</option>
             <option value="qa">QA</option>
           </select>
 
@@ -141,29 +142,13 @@ export default function Contact() {
             GET STARTED
           </button>
         </div>
-        <div className="px-40 sm:w-1/2 sm:px-20 md:w-2/5">
+        <div className="sm:px-20 md:w-2/5 md:px-40">
           <h5 className="text-center sm:text-sm md:text-lg">
             Trusted by the world&apos;s <br />
-            leading brands since 2006.
+            leading brands since 2021.
           </h5>
           <div className="mt-14 flex">
             <div className="flex w-1/2 flex-col items-center gap-7">
-              {/* <Image 
-                className="contact-image"
-                src="/assets/images/contact-us/intel.svg"
-                alt="image"
-                width={150}
-                height={200}
-                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
-              /> */}
-              {/* <Image 
-                className="contact-image"
-                src="/assets/images/contact-us/fox.svg"
-                alt="image"
-                width={150}
-                height={200}
-                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
-              /> */}
               <Image
                 className="contact-image"
                 src="/assets/images/contact-us/riot.svg"
@@ -188,14 +173,6 @@ export default function Contact() {
                   filter: "grayscale(100%) opacity(80%) !important",
                 }}
               />
-              {/* <Image 
-                className="contact-image"
-                src="/assets/images/contact-us/adp.svg"
-                alt="image"
-                width={150}
-                height={200}
-                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
-              /> */}
               <Image
                 className="contact-image"
                 src="/assets/images/contact-us/kaplan.svg"
@@ -234,42 +211,6 @@ export default function Contact() {
               />
             </div>
             <div className="flex w-1/2 flex-col items-center gap-7">
-              {/* <Image 
-                className="contact-image"
-                src="/assets/images/contact-us/sony.svg"
-                alt="image"
-                width={150}
-                height={200}
-                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
-              />
-              <Image 
-                className="contact-image"
-                src="/assets/images/contact-us/dell.svg"
-                alt="image"
-                width={150}
-                height={200}
-                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
-              /> */}
-              {/* <Image 
-                className="contact-image"
-                src="/assets/images/contact-us/twitter.svg"
-                alt="image"
-                width={150}
-                height={200}
-                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
-              /> */}
-              <Image
-                className="contact-image"
-                src="/assets/images/contact-us/coinbase.svg"
-                alt="image"
-                width={150}
-                height={200}
-                style={{
-                  width: "100px !important",
-                  height: "70px !important",
-                  filter: "grayscale(100%) opacity(80%) !important",
-                }}
-              />
               <Image
                 className="contact-image"
                 src="/assets/images/contact-us/beachbody.svg"
