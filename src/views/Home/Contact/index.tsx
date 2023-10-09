@@ -5,6 +5,7 @@ import { SubmitHandler, useForm } from "react-hook-form";
 
 import { sendEmail, SendEmailProps } from "@/api";
 import { BookACall } from "@/components";
+import Image from "next/image";
 
 export default function Contact() {
   const { register, handleSubmit } = useForm<SendEmailProps>({
@@ -17,11 +18,11 @@ export default function Contact() {
   };
 
   return (
-    <form className="px-12 py-20" onSubmit={handleSubmit(onSubmit)}>
+    <form className="px-20 py-20" onSubmit={handleSubmit(onSubmit)}>
       <h2 id="contact" className="text-[30px] font-bold md:text-[58px]">
         Contact us
       </h2>
-      <div className="m-auto flex w-full max-w-xl flex-col items-end gap-8 rounded-xl border border-[#051245] bg-card-gradient px-8 py-10 shadow-xl">
+      {/* <div className="m-auto flex w-full max-w-xl flex-col items-end gap-8 rounded-xl border border-[#051245] bg-card-gradient px-8 py-10 shadow-xl">
         <input
           className="w-full rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
           placeholder="Your E-mail"
@@ -41,6 +42,224 @@ export default function Contact() {
             SEND
           </button>
           <BookACall />
+        </div>
+      </div> */}
+      <div className="mt-10 m-auto flex w-full rounded-md border-2 border-[#051245] bg-card-gradient px-16 py-10 shadow-xl">
+        <div className="md:w-3/5 sm:w-1/2">
+          <h4 className="text-center pb-8">Hire high-performing, on-demand<br/>teams of developers</h4>
+          <div className="flex justify-between">
+            <input
+              className="w-10/12 rounded-md mr-2 placeholder-white border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
+              placeholder="Name"
+              type="text"
+            />
+            <input
+              className="w-10/12 rounded-md placeholder-white border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
+              placeholder="Company email"
+              type="email"
+            />
+          </div>
+          <input
+            className="w-full mt-12 rounded-md placeholder-white border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
+            placeholder="Compnay name"
+            type="text"
+          />
+          <input
+            className="w-full mt-12 rounded-md placeholder-white border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
+            placeholder="Role at your company"
+            type="text"
+          />
+          <input
+            className="w-full mt-12 rounded-md placeholder-white border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
+            placeholder="Phone number"
+            type="text"
+          />
+          <input
+            className="w-full mt-12 rounded-md placeholder-white border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0"
+            placeholder="We're curious, how did you hear about us?"
+            type="text"
+          />
+          
+          <select id="what-need" className="w-full mt-12 rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0">
+            <option>What do you need?</option>
+            <option value="HID">Hire an individual developer</option>
+            <option value="HTD">Build a team of developers</option>
+            <option value="GWB">Get to know X-Term better</option>
+          </select>
+
+          <select id="how-long" className="w-full mt-12 rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0">
+            <option>How loing will you need X-Team?</option>
+            <option value="less-month">less 1 month</option>
+            <option value="between-month">1-3 month</option>
+            <option value="more-month">3+ month</option>
+          </select>
+
+          <select id="need-tern" className="w-full mt-12 rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0">
+            <option>How soon do you need X-Team?</option>
+            <option value="less-week">1-2 weeks</option>
+            <option value="between-week">2-4 weeks</option>
+            <option value="more-week">4+ weeks</option>
+          </select>
+
+          <select id="need-tern" className="w-full mt-12 rounded-md border-2 border-solid border-transparent bg-[#02012D] px-4 py-3 outline-none transition-colors duration-300 focus:border-[#051245] focus:ring-0">
+            <option>What skills do you need?</option>
+            <option value="react-native">React Native</option>
+            <option value="react">React</option>
+            <option value="javascript">Javascript</option>
+            <option value="php">PHP</option>
+            <option value="ruby">Ruby</option>
+            <option value="java">Java</option>
+            <option value="python">Python</option>
+            <option value="mobile">Mobile</option>
+            <option value="devops">Devops</option>
+            <option value="blockchain">Blockchain</option>
+            <option value="data">Data/DBA</option>
+            <option value="qa">QA</option>
+          </select>
+
+          <button
+            type="submit"
+            className="max-w-max mt-12 rounded-md bg-[linear-gradient(180deg,#CE9FFC_0%,#A582F7_50.52%,#7367F0_100%)] px-8 py-2"
+          >
+            GET STARTED
+          </button>
+        </div>
+        <div className="md:w-2/5 px-40 sm:px-20 sm:w-1/2">
+          <h5 className="md:text-lg sm:text-sm text-center">Trusted by the world's <br/>leading brands since 2006.</h5>
+          <div className="flex mt-14">
+            <div className="w-1/2 flex flex-col gap-7 items-center">
+              {/* <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/intel.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              /> */}
+              {/* <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/fox.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              /> */}
+              <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/riot.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              />
+              <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/at&t.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              />
+              {/* <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/adp.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              /> */}
+              <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/kaplan.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              />
+              <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/thread.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "90px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              />
+              <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/chive.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              />
+            </div>
+            <div className="w-1/2 flex flex-col gap-7 items-center">
+              {/* <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/sony.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              />
+              <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/dell.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              /> */}
+              {/* <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/twitter.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              /> */}
+              <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/coinbase.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              />
+              <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/beachbody.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              />
+              <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/discovery.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              />
+              <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/pantheon.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "140px !important", height: "90px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              />
+              <Image 
+                className="contact-image"
+                src="/assets/images/contact-us/zwift.svg"
+                alt="image"
+                width={150}
+                height={200}
+                style={{ width: "100px !important", height: "70px !important", filter: "grayscale(100%) opacity(80%) !important" }}
+              />
+            </div>
+          </div>
         </div>
       </div>
     </form>
