@@ -2,7 +2,7 @@ import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 
-import { Footer, Header } from "@/components";
+import { Footer, Header, Tawk } from "@/components";
 import { domAnimation, LazyMotion } from "@/libs/framer-motion";
 
 import "./globals.css";
@@ -123,6 +123,7 @@ export default function RootLayout({
         </LazyMotion>
         <Footer />
         <Analytics />
+        <Tawk />
       </body>
     </html>
   );
